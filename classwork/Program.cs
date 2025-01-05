@@ -84,11 +84,11 @@
 //    Console.WriteLine($"Квадрат числа {i} : {i * i}");
 //}
 
-//Console.WriteLine("Введите число: ");
-//int a = Convert.ToInt32(Console.ReadLine());
-//int b = 1;
-//for (int i = 1; i <= a; i++)
-//{
-//    b *= i;
-//}
-//Console.WriteLine($"Факториал числа: {a} = {b}");
+Console.WriteLine("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+int b = 1;
+for (int i = 1; i <= a; i++)
+{
+    b *= i;
+}
+Console.WriteLine($"Факториал числа: {a} = {b}");
