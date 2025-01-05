@@ -33,27 +33,14 @@
 //}
 
 
-//int a = 3;
-//int input = -1;
-//int b = 0;
-//while (b < a)
-//{
-
-//}
-
-
 
 //int a = 3; 
 //int c = 2; 
-
 //Console.WriteLine("Угадайте число от 0 до 10. У вас есть 3 попытки.");
-
 //while (a > 0)
 //{
 //    Console.WriteLine("Введите число: ");
 //    string userInput = Console.ReadLine();
-
-
 //    if (int.TryParse(userInput, out int input) && input >= 0 && input <= 10)
 //    {
 //        if (input == c)
@@ -70,11 +57,9 @@
 //    {
 //        Console.WriteLine("Введите число от 0 до 10.");
 //    }
-
 //    a--;
 //    Console.WriteLine($"Осталось попыток: {a}");
 //}
-
 //Console.WriteLine("Попытки закончились. Правильное число было: 2.");
 
 
