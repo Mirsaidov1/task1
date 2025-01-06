@@ -1,20 +1,20 @@
-﻿Console.WriteLine("Введмте число a: ");   //Задание_2
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введмте число b: ");
-int b = Convert.ToInt32(Console.ReadLine());
-if (a == b)
-{
-    Console.WriteLine("Числа равны: \nЧисло a: " + a + 0 + "\n" + "Число b: " + b + 0);
-}
-else
-{
-    Console.WriteLine("Числа не равны: " + ++a);
-    Console.WriteLine(++b);
-}
+﻿//Console.WriteLine("Введмте число a: ");              //  День_3_Задание_2
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введмте число b: ");
+//int b = Convert.ToInt32(Console.ReadLine());
+//if (a == b)
+//{
+//    Console.WriteLine("Числа равны: \nЧисло a: " + a + 0 + "\n" + "Число b: " + b + 0);
+//}
+//else
+//{
+//    Console.WriteLine("Числа не равны: " + ++a);
+//    Console.WriteLine(++b);
+//}
 
 
 
-//Console.WriteLine("Введите operand1: ");   //Задание_3
+//Console.WriteLine("Введите operand1: ");             // День_3_Задание_3
 //int operand1 = Convert.ToInt32(Console.ReadLine());
 //Console.WriteLine("Введите operand2: ");
 //int operand2 = Convert.ToInt32(Console.ReadLine());
@@ -44,7 +44,7 @@ else
 
 
 
-//Console.WriteLine("Введите число от 0-100: "); // Задание_4
+//Console.WriteLine("Введите число от 0-100: ");           // День_3_Задание_4
 //int a = Convert.ToInt32(Console.ReadLine());
 //if (a <= 14)
 //{
@@ -66,7 +66,7 @@ else
 //    Console.WriteLine("Ввели неправильное число!");
 
 
-//Console.WriteLine("Введите число от 0-100: "); // Задание_4
+//Console.WriteLine("Введите число от 0-100: ");         // День_3_Задание_4
 //int a = Convert.ToInt32(Console.ReadLine());
 //if (a >= 0 && a <= 14)
 //{
@@ -86,5 +86,38 @@ else
 //}
 //else
 //    Console.WriteLine("Ввели неправильное число!");
+
+
+
+//Console.WriteLine("Введите число от 1-7: ");
+//int a = Convert.ToInt32(Console.ReadLine());
+//switch (a)
+//{
+//    case 1:
+//        Console.WriteLine("Понидельник");
+//        break;
+//    case 2:
+//        Console.WriteLine("Вторник");
+//        break;
+//    case 3:
+//        Console.WriteLine("Среда");
+//        break;
+//    case 4:
+//        Console.WriteLine("Четверг");
+//        break;
+//    case 5:
+//        Console.WriteLine("Пятница");
+//        break;
+//    case 6:
+//        Console.WriteLine("Суббота");
+//        break;
+//    case 7:
+//        Console.WriteLine("Воскресенье");
+//        break;
+//    default:
+//        Console.WriteLine("Неправильное число!");
+//        break;
+//}
+
 
 
