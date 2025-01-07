@@ -150,7 +150,6 @@ Console.WriteLine("" + sum);
 //{
 //    Tv *= (1 + P / 100);
 //    months++;
-
 //}
 //Console.WriteLine($"Количество месяцев: {months}");
 //Console.WriteLine($"Итоговый размер вклада: {Tv:F2}");
