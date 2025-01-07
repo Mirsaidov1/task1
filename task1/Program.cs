@@ -208,42 +208,42 @@
 //}
 
 
-//Console.WriteLine("Введите число a: "); //Выводит большое число
-//int a = Convert.ToInt32(Console.ReadLine());
-//Console.WriteLine("Введите число b: ");
-//int b = Convert.ToInt32(Console.ReadLine());
-//if (a > b)
-//{
-//    Console.WriteLine($"Число {a} больше");
-//}
-//else
-//{
-//    Console.WriteLine($"Число {b} больше");
-//}
-
-Console.WriteLine("Введите число a: "); //Вывод положительных чисел
+Console.WriteLine("Введите число a: "); //Выводит большое число
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число b: ");
 int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число c: ");
-int c = Convert.ToInt32(Console.ReadLine());
-int Count = 0;
-if (a > 0)
+if (a > b)
 {
-    Count++;
+    Console.WriteLine($"Число {a} больше");
+}
+else
+{
+    Console.WriteLine($"Число {b} больше");
 }
 
-if (b > 0)
-{
-    Count++;
-}
+//Console.WriteLine("Введите число a: "); //Вывод положительных чисел
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите число b: ");
+//int b = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите число c: ");
+//int c = Convert.ToInt32(Console.ReadLine());
+//int Count = 0;
+//if (a > 0)
+//{
+//    Count++;
+//}
 
-if (c > 0)
-{
-    Count++;
-}
+//if (b > 0)
+//{
+//    Count++;
+//}
 
-Console.WriteLine($"Количество положительных чисел: {Count}");
+//if (c > 0)
+//{
+//    Count++;
+//}
+
+//Console.WriteLine($"Количество положительных чисел: {Count}");
 
 //int a = 5, b = 10;
 
