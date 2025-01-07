@@ -1,15 +1,15 @@
-﻿Console.WriteLine("Введите число a: ");       // Задание_2
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число b: ");
-int b = Convert.ToInt32(Console.ReadLine());
-int start = Math.Min(a, b);
-int end = Math.Max(a, b);
-int sum = 0;
-for (int i = start; i <= end; i++)
-{
-    sum += i;
-}
-Console.WriteLine("" + sum);
+﻿//Console.WriteLine("Введите число a: ");       // Задание_2
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите число b: ");
+//int b = Convert.ToInt32(Console.ReadLine());
+//int start = Math.Min(a, b);
+//int end = Math.Max(a, b);
+//int sum = 0;
+//for (int i = start; i <= end; i++)
+//{
+//    sum += i;
+//}
+//Console.WriteLine("" + sum);
 
 
 //Console.WriteLine("Введите число a: ");         // Задание_2
@@ -136,20 +136,20 @@ Console.WriteLine("" + sum);
 
 
 
-//double Nv = 1000;      // Задание_4
-//double Tv = Nv;
-//Console.Write("Введите процент: ");
-//double P = Convert.ToDouble(Console.ReadLine());
-//if (P <= 0 || P >= 25)
-//{
-//    Console.WriteLine("Введите корректный процент: ");
-//    return;
-//}
-//int months = 0;
-//while (Tv <= 1100)
-//{
-//    Tv *= (1 + P / 100);
-//    months++;
-//}
-//Console.WriteLine($"Количество месяцев: {months}");
-//Console.WriteLine($"Итоговый размер вклада: {Tv:F2}");
+double Nv = 1000;      // Задание_4
+double Tv = Nv;
+Console.Write("Введите процент: ");
+double P = Convert.ToDouble(Console.ReadLine());
+if (P <= 0 || P >= 25)
+{
+    Console.WriteLine("Введите корректный процент: ");
+    return;
+}
+int months = 0;
+while (Tv <= 1100)
+{
+    Tv *= (1 + P / 100);
+    months++;
+}
+Console.WriteLine($"Количество месяцев: {months}");
+Console.WriteLine($"Итоговый размер вклада: {Tv:F2}");
