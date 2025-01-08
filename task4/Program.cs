@@ -1,4 +1,21 @@
-﻿// 2. Количество четных и не четных чисел в одномерном массиве
+﻿//1.Проверка на палиндром в числовом массиве
+int[] zd1 = { 121, 234, 1221, 456, 989 };
+foreach (int i in zd1)
+{
+    bool isPalindrome = true;
+    string str = i.ToString();
+    int length = str.Length;
+    for (int j = 0; j < length / 2; j++)
+    {
+        if (str[j] != str[length - j - 1])
+        {
+            isPalindrome = false;
+            break;
+        }
+    }
+    Console.WriteLine($"{i}: {isPalindrome} \n");
+}
+// 2. Количество четных и не четных чисел в одномерном массиве
 int[] array = { 121, 234, 1221, 456, 989 };
 int a = 0;
 int a1 = 0;
@@ -8,7 +25,7 @@ foreach (var item in array)
     {
         a++;
     }
-    else if(item % 2 > 0)
+    else if (item % 2 > 0)
     {
         a1++;
     }
@@ -48,9 +65,10 @@ foreach (int item in array1)
     {
         min = item;
     }
+    Console.Write(item + "\n");
 }
-Console.WriteLine($"{max}");
-Console.WriteLine($"{min}\n");
+Console.WriteLine($"Максимальное число: {max}");
+Console.WriteLine($"Минимальное число: {min}\n");
 
 
 
@@ -59,7 +77,6 @@ Console.WriteLine($"{min}\n");
 
 
 
-int[,] arr = new int[3, 4];
-Random random = new Random();
+
 
 
