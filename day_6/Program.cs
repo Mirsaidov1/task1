@@ -68,12 +68,12 @@
 //Console.WriteLine(Fibonacci(6));
 
 // 4
-int StepChislo(int n, int y)
-{
-    if(y == 0) return 1;
-    return n * StepChislo(n,y-1); 
-}
-Console.WriteLine(StepChislo(10, 2)); // 100
+//int StepChislo(int n, int y)
+//{
+//    if(y == 0) return 1;
+//    return n * StepChislo(n,y-1); 
+//}
+//Console.WriteLine(StepChislo(10, 2)); // 100
 
 // 1
 double GetPow(int a, int b) 
