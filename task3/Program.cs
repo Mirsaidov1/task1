@@ -136,20 +136,31 @@
 
 
 
-double Nv = 1000;      // Задание_4
-double Tv = Nv;
-Console.Write("Введите процент: ");
-double P = Convert.ToDouble(Console.ReadLine());
-if (P <= 0 || P >= 25)
+//double Nv = 1000;      // Задание_4
+//double Tv = Nv;
+//Console.Write("Введите процент: ");
+//double P = Convert.ToDouble(Console.ReadLine());
+//if (P <= 0 || P >= 25)
+//{
+//    Console.WriteLine("Введите корректный процент: ");
+//    return;
+//}
+//int months = 0;
+//while (Tv <= 1100)
+//{
+//    Tv *= (1 + P / 100);
+//    months++;
+//}
+//Console.WriteLine($"Количество месяцев: {months}");
+//Console.WriteLine($"Итоговый размер вклада: {Tv:F2}");
+
+
+// For_4
+int price = 10;
+int sum = 0;
+for (int i = 1; i <= price; i++)
 {
-    Console.WriteLine("Введите корректный процент: ");
-    return;
+    sum = price * i;
+    Console.WriteLine($"Цена {i}кг конфет: {sum}");
+
 }
-int months = 0;
-while (Tv <= 1100)
-{
-    Tv *= (1 + P / 100);
-    months++;
-}
-Console.WriteLine($"Количество месяцев: {months}");
-Console.WriteLine($"Итоговый размер вклада: {Tv:F2}");
