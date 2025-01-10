@@ -76,27 +76,35 @@
 //Console.WriteLine(StepChislo(10, 2)); // 100
 
 // 1
-double GetPow(int a, int b) 
-{
-    return Math.Pow(a, b);
-}
-Console.WriteLine(GetPow(3, 2)); // 9
+//double GetPow(int a, int b) 
+//{
+//    return Math.Pow(a, b);
+//}
+//Console.WriteLine(GetPow(3, 2)); // 9
 
 // 2
 void AddOne(ref int number)
 {
-    number += 10;
-}
-int value = 2;
-AddOne(ref value);
-Console.WriteLine(value); // 12
+    Console.WriteLine(number);
+     number += 10;  
+};
+int num = 5;
+AddOne(ref num);
+int num2 = 10;
+AddOne(ref num2);
+Console.WriteLine(num2);
+
+
+//Console.WriteLine(value); // 12
 
 // 3
-void SumAndRaz(int a, int b, out int sum, out int raz)
-{
-    sum = a + b;
-    raz = a - b;
-}
-int sum;
-SumAndRaz(8, 3, out sum, out int raz);
-Console.WriteLine(sum + raz); // 16
+//void SumAndRaz(int a, int b, out int sum, out int raz)
+//{
+//    sum = a + b;
+//    raz = a - b;
+//}
+//int sum;
+//SumAndRaz(8, 3, out sum, out int raz);
+//Console.WriteLine(sum + raz); // 16
+
+
