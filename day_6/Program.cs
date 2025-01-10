@@ -83,16 +83,16 @@
 //Console.WriteLine(GetPow(3, 2)); // 9
 
 // 2
-void AddOne(ref int number)
-{
-    Console.WriteLine(number);
-     number += 10;  
-};
-int num = 5;
-AddOne(ref num);
-int num2 = 10;
-AddOne(ref num2);
-Console.WriteLine(num2);
+//void AddOne(ref int number)
+//{
+//    Console.WriteLine(number);
+//     number += 10;  
+//};
+//int num = 5;
+//AddOne(ref num);
+//int num2 = 10;
+//AddOne(ref num2);
+//Console.WriteLine(num2);
 
 
 //Console.WriteLine(value); // 12
@@ -106,5 +106,34 @@ Console.WriteLine(num2);
 //int sum;
 //SumAndRaz(8, 3, out sum, out int raz);
 //Console.WriteLine(sum + raz); // 16
+
+
+Console.WriteLine("Калькулятор");
+int a = GetUserInput("Введите первое число: ");
+int b = GetUserInput("Введите второе число: ");
+int oper = GetUserInput("Что вы хотите сделать: \n 1. Сложить, 2. Вычесить, 3. Умножить ");
+int result = ProcessCalc(a, b, oper);
+Console.WriteLine($"Результат расчета равен: {result}");
+int GetUserInput(string what)
+{
+    Console.WriteLine(what);
+    string input = Console.ReadLine();
+    int num = int.Parse(input);
+    return num;
+}
+int ProcessCalc(int a,int b, int oper)
+{
+    int res = 0;
+    if (oper == 1)
+       res = a + b;
+    else if (oper == 2)
+        res = a - b;
+    else if (oper == 3)
+        res = a * b;
+    else
+        Console.WriteLine("Введите правильный оператор!!!");
+    return res;
+}
+
 
 
