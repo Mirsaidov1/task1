@@ -77,69 +77,88 @@
             else
                 result.Append(c);
         }
-        int length = input.Length;
+        int wordcount = input.Length;
+
+        string longesword = "";
+        foreach (string word in input) 
+        {
+            if(word.Length > longesword.Length)
+            {
+                longesword = word;
+            }
+        }
+
+        int digcount = 0;
+        foreach(char n in input)
+        {
+            if (char.IsDigit(n))
+            {
+                digcount++;
+            }
+        }
         
-        
-        System.Console.WriteLine(result);
-        System.Console.WriteLine(length);
+        System.Console.WriteLine(result + "\n");
+        System.Console.WriteLine("Количество слов: " + wordcount);
+        System.Console.WriteLine("Самое длинное слово: " + longesword);
+        System.Console.WriteLine("Количество цифр: " + digcount);
 
-        // string result = input.Replace('а','*')
-        //                      .Replace('о','*')
-        //                      .Replace('у','*')
-        //                      .Replace('е','*')
-        //                      .Replace('ё','*')
-        //                      .Replace('э','*')
-        //                      .Replace('и','*')
-        //                      .Replace('ю','*')
-        //                      .Replace('я','*')
-        //                      .Replace('ы','*')
-        //                      .Replace(' ','-');
-        // System.Console.WriteLine(result);
+// string result = input.Replace('а','*')
+//                      .Replace('о','*')
+//                      .Replace('у','*')
+//                      .Replace('е','*')
+//                      .Replace('ё','*')
+//                      .Replace('э','*')
+//                      .Replace('и','*')
+//                      .Replace('ю','*')
+//                      .Replace('я','*')
+//                      .Replace('ы','*')
+//                      .Replace(' ','-');
+// System.Console.WriteLine(result);
 
 
 
-    //     string result = GenerateCommaSeparatedNumbers(1, 100);
-    //     // Выводим результат на консоль
-    //     Console.WriteLine(result);
-    
+//     string result = GenerateCommaSeparatedNumbers(1, 100);
+//     // Выводим результат на консоль
+//     Console.WriteLine(result);
 
-    //  string GenerateCommaSeparatedNumbers(int start, int end)
-    // {
-    //     // Используем StringBuilder для эффективного построения строки
-    //     var sb = new System.Text.StringBuilder();
-        
-    //     for (int i = start; i <= end; i++)
-    //     {
-    //         sb.Append(i); // Добавляем текущее число
-            
-    //         if (i < end) // Добавляем запятую только если это не последнее число
-    //         {
-    //             sb.Append(", ");
-    //         }
-    //     }
-        
-    //     return sb.ToString(); // Возвращаем получившуюся строку
-    // }
-      
-    //   int nunber = int.Parse("123");
-    //   if (int.TryParse("456",out int result)){
-    //     Console.WriteLine($"Parse: {result}");
-    //   }
-      
-    //   DateTime date = DateTime.Parse("2025-01-11 11:15:20");
-    //   Console.WriteLine(date);
-    
-    
-    // string message = "hello";
-    // for(int i = 0;i < message.Length;i++){
-    //   Console.WriteLine(message[i]);
-    // }
-    
-    // foreach(var n in message){
-    //   Console.WriteLine(n);
-    // }
-    
-    
-    
-    // DateTime today = DateTime.Now;
-    // Console.WriteLine(today);
+
+//  string GenerateCommaSeparatedNumbers(int start, int end)
+// {
+//     // Используем StringBuilder для эффективного построения строки
+//     var sb = new System.Text.StringBuilder();
+
+//     for (int i = start; i <= end; i++)
+//     {
+//         sb.Append(i); // Добавляем текущее число
+
+//         if (i < end) // Добавляем запятую только если это не последнее число
+//         {
+//             sb.Append(", ");
+//         }
+//     }
+
+//     return sb.ToString(); // Возвращаем получившуюся строку
+// }
+
+//   int nunber = int.Parse("123");
+//   if (int.TryParse("456",out int result)){
+//     Console.WriteLine($"Parse: {result}");
+//   }
+
+//   DateTime date = DateTime.Parse("2025-01-11 11:15:20");
+//   Console.WriteLine(date);
+
+
+// string message = "hello";
+// for(int i = 0;i < message.Length;i++){
+//   Console.WriteLine(message[i]);
+// }
+
+// foreach(var n in message){
+//   Console.WriteLine(n);
+// }
+
+
+
+// DateTime today = DateTime.Now;
+// Console.WriteLine(today);
