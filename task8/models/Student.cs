@@ -4,26 +4,28 @@ public class Student
 {
 	public string Name;
 	public int Age;
-	public int Grade;
+	public int[] Grade;
 
 	public Student()
 	{
 	}
     public void GetInfo()
     {
-        Console.WriteLine($" Студент: {Name} \n Возраст: {Age} \n Оценка: {Grade}.");
+        Console.WriteLine($" Студент: {Name} \n Возраст: {Age} \n Оценка: {string.Join(", ", Grade)}.");
     }
 	
 	public bool IsExcellent()
 	{
-        if (Grade >= 5)
+        double AverageGrade = Grade.Average();
+
+        if (AverageGrade >= 4.5)
         {
-            Console.WriteLine("Студент отличник.");
+            Console.WriteLine(" Студент отличник.");
             return true;
         }
         else
         {
-            Console.WriteLine("Студент двоечник.");
+            Console.WriteLine(" Студент двоечник.");
             return false;
         }
     }

@@ -19,6 +19,6 @@
 Student student = new Student();
 student.Name = "Мансур";
 student.Age = 23;
-student.Grade = 4;
+student.Grade = new int[] { 4, 4, 5, 5, 5 };
 student.GetInfo();
 student.IsExcellent();
