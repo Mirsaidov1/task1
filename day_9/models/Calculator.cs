@@ -30,4 +30,18 @@ public class Calculator
     public Calculator()
 	{
 	}
+
+
+    public void Increment(ref int val)
+    {
+        val++;
+        Console.WriteLine(val);
+    }
+
+    public void Increment(int val)
+    {
+        val++;
+        Console.WriteLine(val);
+    }
+
 }
