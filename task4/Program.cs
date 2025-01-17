@@ -51,7 +51,7 @@ foreach (var i in arr1)
 }
 Console.WriteLine($"Количество четных чисел: {count}");
 Console.WriteLine($"Количество не четных чисел: {countt}\n");
-// 3. MIN и MAX в многомерном массиве
+// 3. MIN и MAX в многомерном массиве ds
 int[,] array1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 int max = array1[0, 0];
 int min = array1[0, 0];
