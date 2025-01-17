@@ -7,7 +7,16 @@
 //calculator.Increment(ref val); 
 //calculator.Increment(val);
 
-Circle circle = new Circle();
-circle.Radius = 3;
-circle.CalculateArea();
-circle.CalculateCircumference();
+//Circle circle = new Circle();
+//circle.Radius = 3;
+//circle.CalculateArea();
+//circle.CalculateCircumference();
+
+BankAccount bankaccount = new BankAccount();
+bankaccount.AccountNumber = 17681393;
+bankaccount.AccountHolder = "Mirsaidov";
+bankaccount.Balance = 15000;
+
+bankaccount.Deposit(5000);
+bankaccount.Withdraw(5000);
+bankaccount.GetAccountInfo();
