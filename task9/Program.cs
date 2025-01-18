@@ -11,7 +11,7 @@ Console.WriteLine($"\n{fahrenheitInput}°F = {celsiusOutput}°C");
 // Задание_2
 Car car = new Car
 {
-    Mark = "Mers",
+    Mark = "Mercedes-Benz",
     Model = "w124",
     Year = 1993
 };
