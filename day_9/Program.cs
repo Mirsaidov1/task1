@@ -12,11 +12,21 @@
 //circle.CalculateArea();
 //circle.CalculateCircumference();
 
-BankAccount bankaccount = new BankAccount();
-bankaccount.AccountNumber = 17681393;
-bankaccount.AccountHolder = "Mirsaidov";
-bankaccount.Balance = 15000;
+//BankAccount bankaccount = new BankAccount();
+//bankaccount.AccountNumber = 17681393;
+//bankaccount.AccountHolder = "Mirsaidov";
+//bankaccount.Balance = 15000;
 
-bankaccount.Deposit(5000);
-bankaccount.Withdraw(5000);
-bankaccount.GetAccountInfo();
+//bankaccount.Deposit(5000);
+//bankaccount.Withdraw(5000);
+//bankaccount.GetAccountInfo();
+class Program
+{
+    static void Main(string[] args)
+    {
+        CurrencyConverter.UsdToEur(100);
+        CurrencyConverter.EurToUsd(16.2);
+        CurrencyConverter.RubToUsd(198.2);
+    }
+}
+
