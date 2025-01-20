@@ -30,7 +30,7 @@ dict.Add("Пакистан","Исламабад");
 Console.WriteLine(dict.ContainsKey("Италия")); // False
 dict.Add("Италия", "Рим");
 Console.WriteLine("Словарь после добавления: "+string.Join(", ", dict.Select(x => $"{x.Key}: {x.Value}")));
-// Удалите любую страну из словаря.
+// Удалите любую страну из словаря
 if(dict.Remove("Франция", out var removedValue))
 {
     Console.WriteLine($"Удаленный элемент: {removedValue}");
