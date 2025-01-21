@@ -28,8 +28,19 @@ person.Introduce();
 
 Student student = new Student();
 student.Grade = 100;
+student.Name = "M";
+student.Age = 20;
 student.Work();
+student.PrintInfo();
+
 
 Teacher teacher = new Teacher();
-teacher.Subject = "C#";
+teacher.Name = "t";
+teacher.Age = 20;
+teacher.Subject = "PHP";
 teacher.Work();
+teacher.PrintInfo();
+
+//IFlyable bird =  new Bird();
+//bird.Fly();
+
