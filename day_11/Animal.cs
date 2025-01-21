@@ -12,5 +12,10 @@ namespace day_11
         {
             Console.WriteLine("Animal eating");
         }
+
+        public virtual void Speak()
+        {
+            Console.WriteLine("Animal spaking");
+        }
     }
 }

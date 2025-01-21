@@ -12,5 +12,10 @@ namespace day_11
         {
             Console.WriteLine("Barking");
         }
+
+        public override void Speak()
+        {
+            Console.WriteLine("Dog barks");
+        }
     }
 }

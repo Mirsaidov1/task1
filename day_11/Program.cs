@@ -12,8 +12,24 @@
 //    {"Bozorov", 90 }
 //};
 //Console.WriteLine(string.Join(", \n", dict.Select(x => $"Студент: {x.Key} Балл: {x.Value}")));
-
 using day_11;
+using day_11.models;
 
-Dog animal = new Dog();
-animal.Eat();
+//Animal dog = new Dog();
+//Smallcat cat = new Smallcat();
+//dog.Eat();
+//dog.Speak();
+//cat.Speak();
+
+Person person = new Person();
+person.Name = "Mansur";
+person.Age = 20;
+person.Introduce();
+
+Student student = new Student();
+student.Grade = 100;
+student.Work();
+
+Teacher teacher = new Teacher();
+teacher.Subject = "C#";
+teacher.Work();
