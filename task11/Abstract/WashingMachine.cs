@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace task11.Abstract
 {
-    public abstract class WashingMachine : Appliance
+    public class WashingMachine : Appliance
     {
+        public override void TurnOff()
+        {
+            Console.WriteLine("Стиральная машина Выключение");
+        }
+
         public override void TurnOn()
         {
-            Console.WriteLine("Включение");
+            Console.WriteLine("Стиральная машина Включение");
         }
     }
 }
