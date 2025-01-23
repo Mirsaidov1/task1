@@ -8,12 +8,12 @@ namespace task11.models
 {
     public class Shape
     {
-        public void CalculateArea()
+        public virtual void CalculateArea()
         {
 
         }
 
-        public void CalculatePerimetr()
+        public virtual void CalculatePerimetr()
         {
 
         }
