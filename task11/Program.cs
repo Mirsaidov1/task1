@@ -19,3 +19,16 @@ dog.Sleep();
 Animal cat = new Cat();
 cat.Sleep();
 ((Cat)cat).Sound();
+
+// Дополнительное задание
+Shape circle = new Circle();
+((Circle)circle).CalculateArea();
+((Circle)circle).CalculatePerimetr();
+Shape rectangle = new Rectangle();
+((Rectangle)rectangle).CalculateArea();
+((Rectangle)rectangle).CalculatePerimetr();
+Shape jriagle = new Triangle();
+((Triangle)jriagle).CalculateArea();
+((Triangle)jriagle).CalculatePerimetr();
+
+
