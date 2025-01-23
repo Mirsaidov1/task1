@@ -8,11 +8,23 @@ namespace task11.models
 {
     public  class Circle : Shape
     {
-        int sum = 0;
-        public void CalculateArea(int a, int b)
+        private double s = 0;
+        private double p = 0;
+        public override void CalculateArea()
         {
-            sum += a * b;
-            Console.WriteLine(sum);
+
+            double r = 3.2;
+            s = Math.PI * Math.Pow(r, 2);
+            Console.WriteLine($"Площадь круга: {s}");
+            
+        }
+
+        public override void CalculatePerimetr()
+        {
+
+            double r = 4.2;
+            p = 2 * Math.PI * r;
+            Console.WriteLine($"Периметр круга: {p}");
         }
     }
 }
