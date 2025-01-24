@@ -9,7 +9,7 @@ namespace day_12.models
     public abstract class Document
     {
         public abstract void Print();
-
+//
         public void Save()
         {
             Console.WriteLine("Document saved");
