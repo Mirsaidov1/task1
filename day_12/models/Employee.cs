@@ -24,7 +24,7 @@ namespace day_12.models
                 Console.WriteLine("Сотрудник не прошёл испытательный срок.");
             }
         }
-
+        //
         public decimal GetSalary()
         { 
             return Salary;
