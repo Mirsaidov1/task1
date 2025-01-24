@@ -8,7 +8,7 @@ namespace day_12.models
 {
     public class PdfDocument : Document
     {
-
+        //
         public override void Print()
         {
             Console.WriteLine("Printing PDF document");
