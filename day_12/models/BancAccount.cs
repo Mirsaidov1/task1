@@ -26,7 +26,7 @@ namespace day_12.models
             }
             balance += amount;
         }
-
+        // 
         public void WithDraw(decimal amount)
         {
             if (amount > balance)
