@@ -1,5 +1,6 @@
 ﻿using day_13.models;
 
+
 //try
 //{
 //    Console.WriteLine("Введите возраст: ");
@@ -22,36 +23,46 @@
 //    Console.WriteLine($"Ошибка возраста: {ex.Message}");
 //}
 
-try
+//try
+//{
+//    Console.WriteLine("Введите первое число: ");
+//    int number1 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("Введите второе число: ");
+//    int number2 = Convert.ToInt32(Console.ReadLine());
+
+//    if (number2 == 0)
+//    {
+//        throw new DivideByZeroException("Деление на ноль невозможно!");
+//    }
+
+//    int result = number1 / number2;
+
+//    Console.WriteLine($"Возраст: {result}");
+
+//} catch (FormatException)
+//{
+//    Console.WriteLine("Ошибка: Введите корректное числовое значение.");
+//}
+//catch (DivideByZeroException ex)
+//{
+//    Console.WriteLine($"Ошибка: {ex.Message}");
+//}
+
+
+// Создание файла
+//string filePath = "example.txt";
+//string content = "Пример текста для записи в файл.";
+//File.WriteAllText(filePath, content);
+//Console.WriteLine("Данные записаны в файл.");
+
+// Чтение из файла
+string filePath = "example.txt";
+if (File.Exists(filePath))
 {
-    Console.WriteLine("Введите первое число: ");
-    int number1 = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите второе число: ");
-    int number2 = Convert.ToInt32(Console.ReadLine());
-
-    if (number1 >= 0)
-    {
-        throw new FormatException("Число должен быть положительным");
-    }
-    //} else if (number2 >= 0) 
-    //{
-    //    throw new FormatException("Число должен быть положительным");
-    //}
-
-    if (number2 == 0)
-    {
-        throw new DivideByZeroException("Деление на ноль невозможно!");
-    }
-
-    int result = number1 / number2;
-
-    Console.WriteLine($"Возраст: {result}");
-
-} catch (FormatException)
+    string content = File.ReadAllText(filePath);
+    Console.WriteLine("Содержимое файла: ");
+    Console.WriteLine(content);
+} else
 {
-    Console.WriteLine("Ошибка: Введите корректное числовое значение.");
-}
-catch (DivideByZeroException ex)
-{
-    Console.WriteLine($"Ошибка: {ex.Message}");
+    Console.WriteLine("Файл не найден.");
 }
