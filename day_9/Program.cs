@@ -27,6 +27,18 @@ class Program
         CurrencyConverter.UsdToEur(100);
         CurrencyConverter.EurToUsd(16.2);
         CurrencyConverter.RubToUsd(198.2);
+
+
+        Product product = new Product
+        {
+            Name = "Test",
+            Price = 234,
+            Quantity = 1
+        };
+
+        var (name, price, quantity) = product;
+
+        Console.WriteLine($"{name} {price} {quantity}");
     }
 }
 
