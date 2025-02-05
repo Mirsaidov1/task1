@@ -45,3 +45,4 @@ foreach (var order in highAmount)
     Console.WriteLine($"{order.OrderId} {order.Amount}");
 
 var sumAmount = orders.Sum(x => x.Amount);
+Console.WriteLine($"\nСумма заказов: {sumAmount}");
