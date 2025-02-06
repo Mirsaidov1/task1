@@ -9,14 +9,15 @@ foreach (var item in array)
         result.Add(item);
     }
 }
-int element = array[0];
-foreach (var i in result)
-{
-    if (i <= element)
-    {
-        element = i;
-    }
+//int element = array[0];
+//foreach (var i in result)
+//{
+//    if (i <= element)
+//    {
+//        element = i;
+//    }
 
-}
-Console.WriteLine(element);
+//}
+//Console.WriteLine(element);
+result.Sort();
 Console.WriteLine(string.Join(", ", result));
