@@ -17,8 +17,6 @@ Console.WriteLine("Первое число больше 5: " + one);
 numbers.Reverse();
 Console.WriteLine("Список в обратном порядке: " + string.Join(", ", numbers)+"\n");
 
-
-
 // Задание_2
 // Создайте словарь, где ключи — это названия стран, а значения — их столицы. 
 var dict = new Dictionary<string, string> { { "Россия", "Москва" }, { "Франция", "Париж" }, { "Германия", "Берлин" } };
@@ -35,6 +33,7 @@ if(dict.Remove("Франция", out var removedValue))
 {
     Console.WriteLine($"Удаленный элемент: {removedValue}");
 }
+Console.WriteLine(string.Join(", ", dict.Select(x => $"{x.Key}: {x.Value}")));
 // Попробуйте получить значение для ключа "Германия" с использованием TryGetValue.
 if (dict.TryGetValue("Германия", out var value))
 {
