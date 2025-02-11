@@ -77,4 +77,5 @@ static void GetArray()
         array[i] = rand.Next(30);
         Console.WriteLine(array[i]);
     }
+    Console.WriteLine(array);
 }
